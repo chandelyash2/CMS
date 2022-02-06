@@ -1,0 +1,61 @@
+.home {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.userManagementWrapper {
+  position: absolute;
+  top: 0;
+  width: 1600px;
+  height: 200px;
+  margin-left: 5px;
+  background: url("../public/background.png");
+  background-repeat: no-repeat;
+  object-fit: cover;
+  z-index: 1;
+}
+.wrapperHeading {
+  position: absolute;
+  top: 100px;
+  left: 40px;
+  color: white;
+  z-index: 3;
+}
+.wrapperHeadingContent {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  line-height: 2px;
+  /* font-size: 12px; */
+}
+.wrapperHeadingContentRight {
+  display: flex;
+  flex-direction: row;
+  margin: 28px 0 0 28px;
+}
+.filterSearchWrapper {
+  display: flex;
+  flex-direction: row;
+  margin-TableWrapperleft: 25px;
+}
+.userTableWrapper {
+}
+.userTable{
+  position: absolute;
+  width: 1787.94px;
+  height: 960.89px;
+  top: -89.26px; 
+z-index: 2;
+  background: linear-gradient(360deg, #1b4247 59.94%, rgba(27, 49, 51, 0) 90.6%);
+  background-blend-mode: normal, multiply, normal;
+}
+.TableWrapper{
+  position: absolute;
+  top: 310px;
+  color: white;
+  border: 1px solid #396870;
+  width: 1600px;
+  height: 690px;
+left: 35px;
+  background-color: white;
+}

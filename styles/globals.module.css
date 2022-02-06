@@ -1,0 +1,125 @@
+.body{
+  margin: 0;
+}
+.layoutWrapper {
+  display: flex;
+  width: 100vw;
+  height: 100%;
+}
+.layoutSidebar {
+  flex: .5;
+  height: 100%;
+}
+.layoutContent {
+  flex: 2.55;
+  overflow: hidden;
+}
+
+.sidebarWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 329px;
+  height: 100%;
+  background-color: #123237;
+}
+.sidebarLogo {
+  position: absolute;
+  width: 135px;
+  height: 35px;
+  top: 54px;
+  left: 98px;
+}
+.sidebarItem {
+  position: absolute;
+  width: 100%;
+  top: 140px;
+  cursor: pointer;
+}
+
+.sidebarItemWrapper {
+  width: 100%;
+  border-bottom: 2px solid #f4e28e1a;
+}
+.itemContent {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 25px;
+  text-align: center;
+  height: 58px;
+}
+.itemLabel {
+  display: flex;
+  align-items: center;
+  font-family: Open Sans;
+  font-weight: 700;
+  font-size: 17px;
+  color: rgba(255, 255, 255, 0.4);
+}
+.labelCaption {
+  padding-left: 5px;
+}
+.labelCaption:hover {
+  color: #FECA80;
+}
+.vectorLogo {
+  padding-right: 25px;
+  display: flex;
+  align-items: center;
+}
+.search {
+  display: flex;
+  width: 274px;
+  height: 37px;
+  background: #0f2427;
+  background-blend-mode: multiply;
+  border: 1px solid rgba(166, 255, 231, 0.16999);
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: #FFFFFF;
+  align-items: center;
+}
+.search input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    color: #FFFFFF;
+    outline: none;
+
+}
+.searchImage{
+  width: 20px;
+  height: 15px;
+  margin-right: 4px;
+}
+
+.filterSearch{
+  display: flex;
+flex-direction: row;
+width: 144px;
+height: 37px;
+align-items: center;
+padding: 11px;
+background: #0f2427;
+background-blend-mode: multiply;
+border: 1px solid rgba(166, 255, 231, 0.16999);
+box-sizing: border-box;
+box-shadow: inset 0px -1px 0px #F4E28E;
+
+}
+.filterSearch input{
+  font-size: 12px;
+  width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    color: #FFFFFF;
+    outline: none;
+}
+.filterArrow{
+  width: 20px;
+  height: 15px;
+  margin:5px 4px 0 0;
+  text-align: center;
+}
