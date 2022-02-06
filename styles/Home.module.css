@@ -52,10 +52,25 @@ z-index: 2;
 .TableWrapper{
   position: absolute;
   top: 310px;
-  color: white;
   border: 1px solid #396870;
   width: 1600px;
   height: 690px;
 left: 35px;
   background-color: white;
+}
+.tableHeadingWrapper{
+  display: flex;
+  width: 100%;
+  height: 40px;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(207, 203, 203);
+}
+.tableHeading{
+  margin:  0 0 0 15px;
+  display: flex;
+  height: 40px;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), #C2C9D1;
+  align-items: center;
+  justify-content: space-between;
+  
 }
