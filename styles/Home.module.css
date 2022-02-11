@@ -19,7 +19,7 @@
   top: 100px;
   left: 40px;
   color: white;
-  z-index: 3;
+  z-index: 1;
 }
 .wrapperHeadingContent {
   display: flex;
@@ -121,4 +121,38 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
+}
+.userPopupWrapper{
+  position: absolute;
+width: 2200px;
+height: 1000px;
+left:-400px;
+top: -250px;
+  background: rgba(37, 37, 37, 0.88);
+backdrop-filter: blur(24px);
+z-index: 6;
+}
+
+.userPopup{
+  position: absolute;
+width: 898px;
+height: 592px;
+left: 490px;
+top: 150px;
+z-index: 4;
+background: linear-gradient(176.93deg, #2C5E66 -23.25%, #224146 135.13%);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 12px;
+-webkit-transition: 0.5s;
+  overflow: auto;
+  transition: all 0.3s linear;
+  
+}
+.closePopup{
+color: white;
+position: absolute;
+right: 20px;
+top: 20px;
+cursor: pointer;
+
 }

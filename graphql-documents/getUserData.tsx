@@ -1,8 +1,8 @@
 import { gql } from '@apollo/client'
-export const getData = gql`query GetAllAdminUsers {
-  getAllAdminUsers {
-    status
+export const getData = gql`query GetAllAdminUsers($input: adminUsers) {
+  getAllAdminUsers(input: $input) {
     message
+    status
     data {
       id
       user {
@@ -11,14 +11,14 @@ export const getData = gql`query GetAllAdminUsers {
       }
       email
       posts
-      lastSeen
-      onBoarded
-      accountStatus
-      amplifyRatio
-      actionRatio
-      seenCount
-      amplifyCount
       actionCount
+      amplifyCount
+      seenCount
+      actionRatio
+      amplifyRatio
+      accountStatus
+      onBoarded
+      lastSeen
     }
   }
 }
