@@ -58,12 +58,12 @@ const UserTable = () => {
             {
               userData?.map((d: any) => (
                 // eslint-disable-next-line react/jsx-key
-                <li className={styles.tableList} onClick={(e) => {
+                <li className={styles.tableList}  onClick={(e) => {
                   setOnclickData(d?.user?.userProfileName)
                   openModal()
                 }}>
 
-                  <ul >{d?.user?.userProfileName}</ul>
+                  <ul style={{cursor:"pointer"}}>{d?.user?.userProfileName}</ul>
 
                 </li>
               ))
