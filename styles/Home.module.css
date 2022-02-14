@@ -103,14 +103,13 @@
   border-bottom: 1px solid rgb(231, 225, 225);
 }
 .tableList ul {
-  
   text-align: center;
   align-items: center;
 
   padding: 0;
   margin: 7px;
 }
-.avatar{
+.avatar {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -122,37 +121,73 @@
   justify-content: center;
   text-align: center;
 }
-.userPopupWrapper{
+.userPopupWrapper {
   position: absolute;
-width: 2200px;
-height: 1000px;
-left:-400px;
-top: -250px;
+  width: 2200px;
+  height: 1000px;
+  left: -400px;
+  top: -250px;
   background: rgba(37, 37, 37, 0.88);
-backdrop-filter: blur(24px);
-z-index: 6;
+  backdrop-filter: blur(24px);
+  z-index: 6;
 }
 
-.userPopup{
+.userPopup {
   position: absolute;
-width: 898px;
-height: 592px;
-left: 490px;
-top: 150px;
-z-index: 4;
-background: linear-gradient(176.93deg, #2C5E66 -23.25%, #224146 135.13%);
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 12px;
--webkit-transition: 0.5s;
+  width: 998px;
+  height: 592px;
+  left: 490px;
+  top: 150px;
+  z-index: 4;
+  background: linear-gradient(176.93deg, #2c5e66 -23.25%, #224146 135.13%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  -webkit-transition: 0.5s;
   overflow: auto;
   transition: all 0.3s linear;
-  
+  color: white;
 }
-.closePopup{
-color: white;
-position: absolute;
-right: 20px;
-top: 20px;
-cursor: pointer;
+.closePopup {
+  color: white;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+.userProfile {
+  position: relative;
+  width: 127px;
+  height: 127px;
+  left: 56px;
+  top: 56px;
+  border: 3px solid #56d56a;
+  box-sizing: border-box;
+  border-radius: 50%;
+object-fit: contain;
+  text-align: center;
+}
+.userDetail{
+ position: absolute;
+ left: 30%;
+ top: 0;
+ width: 350px;
+ height: 588px;
+ border-right: 2px solid yellow;
+}
+.userPersonalDetail{
+  position: relative;
+  top: 10%;
+  left: -22%;
+
+}
+.detailRow1,.detailRow2,.detailRow3,.detailRow4{
+  display: flex;
+  justify-content: space-between;
+  width: 380px;
+  font-family: Montserrat;
+font-style: normal;
+text-align: center;
+align-items: center;
+height: 50px;
 
 }

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import styles from "../../../styles/Home.module.css";
 import UserTableDiv from "../../reusable/userTableDiv";
 import { useQuery } from "@apollo/client";
@@ -25,8 +25,15 @@ const UserTable = () => {
   );
   // console.log(, "homeData")
   const userData = data?.getAllAdminUsers?.data
-  useEffect(() => { setUserData(userData) }, [userData])
-  console.log(state.value, "value")
+  const [onCLickData, setOnclickData] = useState(null)
+
+  console.log(onCLickData, "click=>>>")
+  useEffect(() => {
+    const clickedUser = userData?.filter((d: any) => d?.user?.userProfileName === onCLickData)
+ 
+    setUserData(clickedUser)
+  },[onCLickData])
+  // console.log(state.value, "value")
 
 
   return (
@@ -51,7 +58,10 @@ const UserTable = () => {
             {
               userData?.map((d: any) => (
                 // eslint-disable-next-line react/jsx-key
-                <li className={styles.tableList} onClick={openModal}>
+                <li className={styles.tableList} onClick={(e) => {
+                  setOnclickData(d?.user?.userProfileName)
+                  openModal()
+                }}>
 
                   <ul >{d?.user?.userProfileName}</ul>
 
